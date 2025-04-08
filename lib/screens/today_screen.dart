@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import '../providers/todo_provider.dart';
 import '../providers/monthly_goal_provider.dart';
 import '../widgets/todo_item.dart';
+import '../widgets/ad_banner_placeholder.dart';
 
 class TodayScreen extends StatelessWidget {
   const TodayScreen({Key? key}) : super(key: key);
@@ -45,6 +46,9 @@ class TodayScreen extends StatelessWidget {
             children: [
               // 현재 날짜 표시
               _buildDateHeader(),
+              
+              // 배너 광고 추가
+              const Center(child: AdBannerPlaceholder()),
               
               // 이번 달 목표 미리보기
               _buildMonthlyGoalPreview(context, goalProvider),
