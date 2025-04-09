@@ -4,7 +4,6 @@ import 'package:intl/intl.dart';
 import '../providers/monthly_goal_provider.dart';
 import '../widgets/monthly_goal_item.dart';
 import '../models/monthly_goal_model.dart';
-import '../widgets/ad_banner_placeholder.dart';
 
 class MonthlyGoalScreen extends StatefulWidget {
   const MonthlyGoalScreen({Key? key}) : super(key: key);
@@ -106,9 +105,6 @@ class _MonthlyGoalScreenState extends State<MonthlyGoalScreen> {
                   ],
                 ),
               ),
-              
-              // 배너 광고 추가
-              const Center(child: AdBannerPlaceholder(size: BannerSize.largeBanner)),
               
               // 목표 목록
               Expanded(
